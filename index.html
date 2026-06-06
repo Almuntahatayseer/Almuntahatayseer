@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Muntaha Al Tayseer Institute</title>
+    <title>Al Muntaha Tayseer</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -429,34 +429,17 @@
             margin-bottom: 20px;
         }
 
-        .course-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(201, 169, 97, 0.3);
-        }
-
-        .course-duration {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--gray);
-            font-size: 14px;
-        }
-
-        .course-duration i {
-            color: var(--matte-gold);
-        }
-
         .course-btn {
             color: var(--royal-emerald);
             font-weight: 600;
             text-decoration: none;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 5px;
             transition: gap 0.3s;
+            padding-top: 15px;
+            border-top: 1px solid rgba(201, 169, 97, 0.3);
+            width: 100%;
         }
 
         .course-btn:hover {
@@ -526,8 +509,10 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .stat-card {
@@ -551,9 +536,9 @@
             margin-bottom: 15px;
         }
 
-        .stat-number {
+        .stat-text {
             font-family: 'Playfair Display', serif;
-            font-size: 42px;
+            font-size: 24px;
             font-weight: 700;
             color: var(--matte-gold);
             margin-bottom: 10px;
@@ -854,7 +839,7 @@
     <!-- Header -->
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">Al Muntaha <span>Al Tayseer</span></a>
+            <a href="#" class="logo">Al Muntaha <span>Tayseer</span></a>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -871,8 +856,8 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Welcome to <span>Al Muntaha Al Tayseer</span> Institute</h1>
-                <p>Empowering minds, enlightening souls. Join our premier educational institute dedicated to excellence in Islamic and modern education with a commitment to nurturing future leaders.</p>
+                <h1>Welcome to <span>Al Muntaha Tayseer</span></h1>
+                <p>Empowering minds, enlightening souls. Join our premier online educational institute dedicated to excellence in Islamic and modern education with a commitment to nurturing future leaders.</p>
                 <div class="hero-buttons">
                     <a href="#courses" class="btn-primary">
                         <i class="fas fa-book-open"></i>
@@ -908,12 +893,12 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="About Al Muntaha Al Tayseer">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="About Al Muntaha Tayseer">
                 </div>
                 <div class="about-content">
-                    <h3>Building Future Leaders Since 2010</h3>
-                    <p>Al Muntaha Al Tayseer Institute is a premier educational institution committed to providing quality education that combines traditional Islamic values with modern academic excellence. Our institute has been serving the community for over a decade, nurturing thousands of students who have gone on to become successful professionals and community leaders.</p>
-                    <p>We believe in holistic education that develops the mind, body, and soul. Our dedicated team of qualified educators works tirelessly to create an environment where every student can thrive and reach their full potential.</p>
+                    <h3>About Al Muntaha Tayseer</h3>
+                    <p>Al Muntaha Tayseer is a premier online educational institution committed to providing quality education that combines traditional Islamic values with modern academic excellence. Our institute was established in 2025 with a vision to serve the community by nurturing students who become successful professionals and community leaders.</p>
+                    <p>We believe in holistic education that develops the mind, body, and soul. Our dedicated team of educators works tirelessly to create an environment where every student can thrive and reach their full potential.</p>
                     <div class="about-features">
                         <div class="feature-item">
                             <i class="fas fa-graduation-cap"></i>
@@ -951,15 +936,69 @@
                         <i class="fas fa-book-quran"></i>
                     </div>
                     <div class="course-content">
-                        <h3>Quran Studies</h3>
-                        <p>Comprehensive Quranic education including Tajweed, Tafsir, and memorization programs for all age groups.</p>
-                        <div class="course-meta">
-                            <div class="course-duration">
-                                <i class="fas fa-clock"></i>
-                                <span>2 Years</span>
-                            </div>
-                            <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
-                        </div>
+                        <h3>Tarjuma Tafseer</h3>
+                        <p>Comprehensive Quranic education with translation and detailed explanation for deep understanding of the Holy Quran.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Nazra Quran</h3>
+                        <p>Learn to read the Quran with proper pronunciation and fluency, suitable for beginners of all ages.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-spell-check"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Tajweed</h3>
+                        <p>Master the rules of Tajweed for beautiful and accurate Quranic recitation according to classical standards.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Hifz</h3>
+                        <p>Memorization program for the Holy Quran with structured techniques and dedicated teacher support.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Graphic Designing</h3>
+                        <p>Learn professional graphic design skills including tools, techniques, and creative design principles.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Video Editing</h3>
+                        <p>Master video editing software and techniques to create professional-quality video content.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Square Kufi Calligraphy</h3>
+                        <p>Learn the beautiful art of digital Kufi calligraphy with modern digital tools and techniques.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="course-card">
@@ -967,31 +1006,19 @@
                         <i class="fas fa-language"></i>
                     </div>
                     <div class="course-content">
-                        <h3>Arabic Language</h3>
-                        <p>Master Arabic from beginner to advanced levels with our structured curriculum and native-speaking instructors.</p>
-                        <div class="course-meta">
-                            <div class="course-duration">
-                                <i class="fas fa-clock"></i>
-                                <span>1.5 Years</span>
-                            </div>
-                            <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
-                        </div>
+                        <h3>English Grammar & Spoken</h3>
+                        <p>Comprehensive English language course covering grammar, vocabulary, and spoken English fluency.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-image">
-                        <i class="fas fa-laptop-code"></i>
+                        <i class="fas fa-share-nodes"></i>
                     </div>
                     <div class="course-content">
-                        <h3>Computer Science</h3>
-                        <p>Modern technology education including programming, web development, and digital skills for the modern world.</p>
-                        <div class="course-meta">
-                            <div class="course-duration">
-                                <i class="fas fa-clock"></i>
-                                <span>1 Year</span>
-                            </div>
-                            <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
-                        </div>
+                        <h3>Social Media Marketing</h3>
+                        <p>Learn effective social media marketing strategies to grow brands and businesses online.</p>
+                        <a href="#contact" class="course-btn">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1003,7 +1030,7 @@
         <div class="section-container">
             <div class="section-header">
                 <h2>Our Institute</h2>
-                <p>Experience the vibrant life and learning environment at Al Muntaha Al Tayseer</p>
+                <p>Experience the vibrant life and learning environment at Al Muntaha Tayseer</p>
                 <div class="gold-line"></div>
             </div>
             <div class="institute-video-container">
@@ -1012,7 +1039,7 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <p class="video-caption"><i class="fas fa-play-circle"></i> Watch our institute promotion video</p>
+            <p class="video-caption"><i class="fas fa-play-circle"></i> Watch our institute video</p>
         </div>
     </section>
 
@@ -1022,23 +1049,13 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <i class="fas fa-users"></i>
-                    <div class="stat-number">2,500+</div>
-                    <div class="stat-label">Students Enrolled</div>
+                    <div class="stat-text">Students Learn</div>
+                    <div class="stat-label">Join our growing community of learners</div>
                 </div>
                 <div class="stat-card">
                     <i class="fas fa-chalkboard-user"></i>
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Expert Teachers</div>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-award"></i>
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-book-open"></i>
-                    <div class="stat-number">25+</div>
-                    <div class="stat-label">Courses Offered</div>
+                    <div class="stat-text">Expert Teachers</div>
+                    <div class="stat-label">Learn from qualified professionals</div>
                 </div>
             </div>
         </div>
@@ -1058,17 +1075,17 @@
                     <p>We would love to hear from you. Reach out to us for any inquiries about admissions, courses, or general information about our institute.</p>
 
                     <div class="contact-item">
-                        <i class="fas fa-location-dot"></i>
+                        <i class="fas fa-globe"></i>
                         <div>
-                            <strong>Address</strong>
-                            <span>123 Education Street, Islamic City</span>
+                            <strong>Institute Type</strong>
+                            <span>Online Institute</span>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
+                        <i class="fab fa-whatsapp"></i>
                         <div>
-                            <strong>Phone</strong>
-                            <span>+1 234 567 8900</span>
+                            <strong>WhatsApp Business</strong>
+                            <span>0333 4663063</span>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1082,21 +1099,21 @@
                         <i class="fas fa-clock"></i>
                         <div>
                             <strong>Working Hours</strong>
-                            <span>Sat - Thu: 8:00 AM - 6:00 PM</span>
+                            <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
                         </div>
                     </div>
 
                     <div class="social-links">
-                        <a href="https://wa.me/1234567890" class="social-whatsapp" target="_blank" title="WhatsApp">
+                        <a href="https://wa.me/923334663063" class="social-whatsapp" target="_blank" title="WhatsApp Business">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <a href="https://pin.it/4qD2h0Msl" class="social-pinterest" target="_blank" title="Pinterest">
                             <i class="fab fa-pinterest-p"></i>
                         </a>
-                        <a href="https://instagram.com/almuntaha" class="social-instagram" target="_blank" title="Instagram">
+                        <a href="https://instagram.com/almuntahatayseer" class="social-instagram" target="_blank" title="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://youtube.com/almuntaha" class="social-youtube" target="_blank" title="YouTube">
+                        <a href="https://youtube.com/@almuntahatayseer?si=kNEG3i2oUkvRZ55X" class="social-youtube" target="_blank" title="YouTube">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -1120,10 +1137,15 @@
                             <label>Course Interest</label>
                             <select>
                                 <option>Select a course</option>
-                                <option>Quran Studies</option>
-                                <option>Arabic Language</option>
-                                <option>Computer Science</option>
-                                <option>Islamic Studies</option>
+                                <option>Tarjuma Tafseer</option>
+                                <option>Nazra Quran</option>
+                                <option>Tajweed</option>
+                                <option>Hifz</option>
+                                <option>Graphic Designing</option>
+                                <option>Video Editing</option>
+                                <option>Digital Square Kufi Calligraphy</option>
+                                <option>English Grammar & Spoken</option>
+                                <option>Social Media Marketing</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -1144,8 +1166,8 @@
         <div class="section-container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>Al Muntaha Al Tayseer</h3>
-                    <p>Empowering minds and enlightening souls through quality education since 2010. Join us in our mission to build a brighter future.</p>
+                    <h3>Al Muntaha Tayseer</h3>
+                    <p>Empowering minds and enlightening souls through quality online education. Join us in our mission to build a brighter future.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -1159,24 +1181,24 @@
                 <div class="footer-links">
                     <h4>Courses</h4>
                     <ul>
-                        <li><a href="#">Quran Studies</a></li>
-                        <li><a href="#">Arabic Language</a></li>
-                        <li><a href="#">Computer Science</a></li>
-                        <li><a href="#">Islamic Studies</a></li>
+                        <li><a href="#">Tarjuma Tafseer</a></li>
+                        <li><a href="#">Nazra Quran</a></li>
+                        <li><a href="#">Tajweed</a></li>
+                        <li><a href="#">Hifz</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Connect</h4>
                     <ul>
-                        <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></li>
+                        <li><a href="https://wa.me/923334663063" target="_blank">WhatsApp Business</a></li>
                         <li><a href="https://pin.it/4qD2h0Msl" target="_blank">Pinterest</a></li>
-                        <li><a href="https://instagram.com/almuntaha" target="_blank">Instagram</a></li>
-                        <li><a href="https://youtube.com/almuntaha" target="_blank">YouTube</a></li>
+                        <li><a href="https://instagram.com/almuntahatayseer" target="_blank">Instagram</a></li>
+                        <li><a href="https://youtube.com/@almuntahatayseer?si=kNEG3i2oUkvRZ55X" target="_blank">YouTube</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p> Al Muntaha Al Tayseer Institute. All Rights Reserved. Designed with <i class="fas fa-heart" style="color: var(--matte-gold);"></i> for excellence.</p>
+                <p> Al Muntaha Tayseer. All Rights Reserved. Designed with <i class="fas fa-heart" style="color: var(--matte-gold);"></i> for excellence.</p>
             </div>
         </div>
     </footer>
